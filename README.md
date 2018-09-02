@@ -1,6 +1,29 @@
 # MovieRating
+The live version of site is available at https://karanpalan7507.github.io/MovieRatingSite
+
+Features include the following:
+
+Login in functionality with validations (email & password)
+
+Register functionality with validations (Full Name, email, password)
+
+
+After login user should see homepage with--
+
+Movies List: should list movies (Movie Name, Release date, average rating)
+
+Rating movie (1-5)
+
+Filtering (based on movie name entered).
+
+Sorting (based on release date, Alphabetical Movie sorting).
+
+Pagination (10 results on 1 page).
+
+Used session storage to store data.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.8.
+eatures.
 
 ## Development server
 

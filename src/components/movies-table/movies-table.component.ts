@@ -14,8 +14,8 @@ export class MoviesTableComponent implements OnInit {
   private gridApi;
   private gridColumnApi;
   private sortingOrder;
-  private columnDefs = [];
-  private frameworkComponents;
+  columnDefs = [];
+  frameworkComponents;
 
   constructor(private movieService: MovieService) {
     this.movieService.data.subscribe(data => {
