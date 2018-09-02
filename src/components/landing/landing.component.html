@@ -1,2 +1,14 @@
-<a routerLink="/login">Login</a>
-<a routerLink="/register">Register</a>
+<div class="landing-wrapper" *ngIf="isLoggedIn">
+    <div class="links">
+        <a routerLink="/logout">Logout</a>
+    </div>
+    <app-movies-table></app-movies-table>
+</div>
+<div class="landing-wrapper" *ngIf="!isLoggedIn">
+    <div class="links"> 
+        <a routerLink="/login">Login</a>
+        <a routerLink="/register">Register</a>
+    </div>
+
+    <app-movies-table [fullView]=false></app-movies-table>
+</div>

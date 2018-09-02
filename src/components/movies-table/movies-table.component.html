@@ -1,0 +1,6 @@
+<div class="movie-wrapper">
+  <ag-grid-angular [style.width.px]="fullView?802:602" [style.height.px]="fullView?380:316" class="ag-theme-balham" [rowData]="movies" [columnDefs]="columnDefs"
+    [pagination]="true" paginationPageSize=10 [enableSorting]=fullView (gridReady)="onGridReady($event)" [suppressPaginationPanel]=!fullView
+    [enableFilter]="fullView" [frameworkComponents]="frameworkComponents" [floatingFilter]="fullView">
+  </ag-grid-angular>
+</div>
